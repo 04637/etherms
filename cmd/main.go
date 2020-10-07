@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"aid.dev/etherms/internal"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println("hello")
 	r := gin.Default()
-	r.GET("/ping", )
+	r.GET("/ping", internal.Login)
 	r.Run("0.0.0.0:9002")
 }

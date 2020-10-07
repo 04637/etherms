@@ -1,4 +1,4 @@
-package handlers
+package internal 
 
 // Resp 响应类
 type Resp struct {
