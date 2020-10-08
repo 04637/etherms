@@ -32,11 +32,12 @@ func (p *Params) Data() map[string]string{
 }
 
 // Get 简单get请求
-func Get(url string, params Params) {
+func Get(url string, params *Params) {
+	client.SetRedirectPolicy(resty.FlexibleRedirectPolicy(20))
 	resp, err := client.R(). 
 		SetQueryParams(params.params).
 		Get(url)
-	fmt.Println(resp)
-	fmt.Println(err)
+	fmt.Println("resp: ", resp)
+	fmt.Println("err: ", err)
 }
 
