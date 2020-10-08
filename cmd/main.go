@@ -8,5 +8,5 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/ping", internal.Login)
-	r.Run("0.0.0.0:9002")
+	_ = r.Run(":9002")
 }

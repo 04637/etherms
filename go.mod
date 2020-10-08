@@ -3,7 +3,7 @@ module aid.dev/etherms
 go 1.15
 
 require (
-	github.com/FabianWe/etherpadlite-golang v1.1.0 // indirect
+	github.com/FabianWe/etherpadlite-golang v1.1.0
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.4.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
@@ -16,5 +16,5 @@ require (
 	golang.org/x/sys v0.0.0-20201004230629-f6757f270073 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/resty.v1 v1.12.0
-	gopkg.in/yaml.v2 v2.3.0 // indirect
+	gopkg.in/yaml.v2 v2.3.0
 )
