@@ -12,8 +12,8 @@ var pad *etherpadlite.EtherpadLite
 
 // InitPad init a etherpad api
 func InitPad(conf config.Conf) {
-	pad = etherpadlite.NewEtherpadLite(conf.Api.ApiKey)
-	pad.BaseURL = conf.Api.BaseUrl
+	pad = etherpadlite.NewEtherpadLite(conf.API.APIKey)
+	pad.BaseURL = conf.API.BaseURL
 	pad.RaiseEtherpadErrors = true
 }
 

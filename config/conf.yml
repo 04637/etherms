@@ -1,6 +1,13 @@
-api:
-  baseUrl: http://deva.wiki:9001/api
+API:
+  baseURL: http://deva.wiki:9001/api
   apiKey: 5df5ccdef3358c76d650e4e986dda2c316243396911bc6aa3cbf858077d2bd93
-db:
+DB:
+  host: deva.wiki:3306
   username: etherpad
   password: Jgt.2020
+  # Set the maximum number of connections in the idle connection pool.
+  maxIdleConns: 10
+  # Set the maximum number of open connections to the database.
+  maxOpenConns: 100
+  # Set the maximum amount of time a connection may be reused.
+  connMaxLifetime: 1

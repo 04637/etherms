@@ -1,16 +1,15 @@
-package config_test
+package config
 
 import (
-	"aid.dev/etherms/config"
 	"testing"
 )
 
 func TestLoadConfig(t *testing.T) {
-	conf := config.LoadConfig()
-	if conf.Api.ApiKey == "" {
+	conf := Load()
+	if conf.API.APIKey == "" {
 		t.Error("apiKey is nil")
 	}
-	if conf.Api.BaseUrl == "" {
+	if conf.API.BaseURL == "" {
 		t.Error("baseUrl is nil")
 	}
 }

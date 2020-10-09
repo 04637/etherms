@@ -1,31 +1,30 @@
-package etherpad_test
+package etherpad
 
 import (
 	"aid.dev/etherms/config"
-	"aid.dev/etherms/internal/etherpad"
 	"testing"
 )
 
 func TestInitPad(t *testing.T) {
-	conf := config.LoadConfig()
-	etherpad.InitPad(conf)
+	conf := config.Load()
+	InitPad(conf)
 }
 
 func TestListPad(t *testing.T) {
-	conf := config.LoadConfig()
-	etherpad.InitPad(conf)
-	padIds := etherpad.ListAllPads()
+	conf := config.Load()
+	InitPad(conf)
+	padIds := ListAllPads()
 	t.Log(padIds)
 	t.Log(padIds[0])
 }
 
 func TestListMyPads(t *testing.T) {
 	TestInitPad(t)
-	etherpad.ListMyPads("X5615")
+	ListMyPads("X5615")
 }
 
 func TestNewUser(t *testing.T) {
 	TestInitPad(t)
-	id := etherpad.NewUser("X5615", "籍观通")
+	id := NewUser("X5615", "籍观通")
 	t.Log(id)
 }

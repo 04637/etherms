@@ -1,4 +1,5 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
+github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/FabianWe/etherpadlite-golang v1.1.0 h1:xOE9peUxn6zdHM40WQeELzUG/qdmISe+tTHT9XF88bA=
 github.com/FabianWe/etherpadlite-golang v1.1.0/go.mod h1:Fb4NJ3cDFiNm7jo4aSx+DRyNRIWWU1zrxCOiXdtFWKM=
@@ -152,4 +153,5 @@ gorm.io/driver/mysql v1.0.2/go.mod h1:T+Fv7Rq/8+lpS3X1KKVUbj8Y/SzbPa5esK9KpPAKXR
 gorm.io/gorm v1.20.2 h1:bZzSEnq7NDGsrd+n3evOOedDrY5oLM5QPlCjZJUK2ro=
 gorm.io/gorm v1.20.2/go.mod h1:0HFTzE/SqkGTzK6TlDPPQbAYCluiVvhzoA1+aVyzenw=
 honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
+honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc h1:/hemPrYIhOhy8zYrNj+069zDB68us2sMGsfkFJO0iZs=
 honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
