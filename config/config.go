@@ -14,6 +14,10 @@ type Conf struct {
 		ApiKey  string `yaml:"apiKey"`
 		BaseUrl string `yaml:"baseUrl"`
 	}
+	Db struct {
+		Username string `yaml:"username"`
+		Password string `yaml:"password"`
+	}
 }
 
 func LoadConfig() Conf {

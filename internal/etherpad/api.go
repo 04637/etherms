@@ -17,7 +17,8 @@ func InitPad(conf config.Conf) {
 	pad.RaiseEtherpadErrors = true
 }
 
-func ListPad() []string {
+// ListAllPads 获取所有文本列表
+func ListAllPads() []string {
 	resp, err := pad.ListAllPads(context.Background())
 	internal.HandleErr(err)
 	a := resp.Data["padIDs"].([]interface{})
@@ -28,16 +29,18 @@ func ListPad() []string {
 	return padIDs
 }
 
-func ListMyPads() []string {
-	resp, err := pad.PadUsers(context.Background(), "12")
+// ListMyhPads 获取我的所有文本
+func ListMyPads(userId string) []string {
+	resp, err := pad.ListPadsOfAuthor(context.Background(), "12")
 	internal.HandleErr(err)
 	fmt.Println(resp.Data)
 	return nil
 }
 
-func GetAuthorName(authorId string) string {
-	resp, err := pad.GetAuthorName(context.Background(), authorId)
+// NewUser 创建用户
+func NewUser(id, name string) string {
+	resp, err := pad.CreateAuthorIfNotExistsFor(context.Background(), id, name)
 	internal.HandleErr(err)
-	fmt.Println(resp.Data)
-	return ""
+	authorId := resp.Data["authorID"].(string)
+	return authorId
 }

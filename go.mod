@@ -17,4 +17,5 @@ require (
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/resty.v1 v1.12.0
 	gopkg.in/yaml.v2 v2.3.0
+	gorm.io/driver/mysql v1.0.2 // indirect
 )

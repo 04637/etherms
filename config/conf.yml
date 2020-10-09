@@ -1,3 +1,6 @@
 api:
   baseUrl: http://deva.wiki:9001/api
   apiKey: 5df5ccdef3358c76d650e4e986dda2c316243396911bc6aa3cbf858077d2bd93
+db:
+  username: etherpad
+  password: Jgt.2020
